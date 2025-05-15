@@ -74,7 +74,7 @@ class TestUrbanRoutes:
         time.sleep(2)
         wait = WebDriverWait(self.driver, 3)
         element = wait.until(expected_conditions.element_to_be_clickable(
-            (By.XPATH, '//div[@class="tcard-icon"]//img[@alt="Supportive"]')))
+            urban_routes_page.SUPPORTIVE_TEXT_LOCATOR))
         element.click()
         urban_routes_page.click_phone_number_field()
         urban_routes_page.enter_phone_number(data.PHONE_NUMBER)
@@ -92,12 +92,13 @@ class TestUrbanRoutes:
         urban_routes_page = UrbanRoutesPage(self.driver)
         urban_routes_page.enter_locations(data.ADDRESS_FROM, data.ADDRESS_TO)
         urban_routes_page.click_custom_option()
+        time.sleep(2)
         urban_routes_page.click_taxi_icon()
         urban_routes_page.click_call_a_taxi()
         time.sleep(2)
         wait = WebDriverWait(self.driver, 3)
         element = wait.until(expected_conditions.element_to_be_clickable(
-            (By.XPATH, '//div[@class="tcard-icon"]//img[@alt="Supportive"]')))
+            urban_routes_page.SUPPORTIVE_TEXT_LOCATOR))
         element.click()
         urban_routes_page.click_phone_number_field()
         urban_routes_page.enter_phone_number(data.PHONE_NUMBER)
@@ -123,7 +124,7 @@ class TestUrbanRoutes:
         time.sleep(2)
         wait = WebDriverWait(self.driver, 3)
         element = wait.until(expected_conditions.element_to_be_clickable(
-            (By.XPATH, '//div[@class="tcard-icon"]//img[@alt="Supportive"]')))
+            urban_routes_page.SUPPORTIVE_TEXT_LOCATOR))
         element.click()
         urban_routes_page.click_phone_number_field()
         urban_routes_page.enter_phone_number(data.PHONE_NUMBER)
@@ -152,7 +153,7 @@ class TestUrbanRoutes:
         time.sleep(2)
         wait = WebDriverWait(self.driver, 3)
         element = wait.until(expected_conditions.element_to_be_clickable(
-            (By.XPATH, '//div[@class="tcard-icon"]//img[@alt="Supportive"]')))
+            urban_routes_page.SUPPORTIVE_TEXT_LOCATOR))
         element.click()
         urban_routes_page.click_phone_number_field()
         urban_routes_page.enter_phone_number(data.PHONE_NUMBER)
@@ -180,7 +181,7 @@ class TestUrbanRoutes:
         time.sleep(2)
         wait = WebDriverWait(self.driver, 3)
         element = wait.until(expected_conditions.element_to_be_clickable(
-            (By.XPATH, '//div[@class="tcard-icon"]//img[@alt="Supportive"]')))
+            urban_routes_page.SUPPORTIVE_TEXT_LOCATOR))
         element.click()
         urban_routes_page.click_phone_number_field()
         urban_routes_page.enter_phone_number(data.PHONE_NUMBER)
