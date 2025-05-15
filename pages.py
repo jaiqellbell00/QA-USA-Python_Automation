@@ -187,3 +187,4 @@ class UrbanRoutesPage:
         # Verify "Car search" modal appears after ordering
     def verify_car_search_modal(self):
         return self.driver.find_element(*self.CAR_SEARCH_MODAL_LOCATOR).text
+
